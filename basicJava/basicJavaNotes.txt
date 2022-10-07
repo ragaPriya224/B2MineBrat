@@ -1,0 +1,21 @@
+type []var-name = new type [size];
+
+
+int []marks = new int[10];
+
+marks[1] = 20;
+marks[5] = 45;
+
+
+REFER LINK: https://pythontutor.com/java.html
+W3SCHOOLS
+
+https://runestone.academy/ns/books/published/apcsareview/Strings/Exercises.html
+
+
+TASKS TO DO:
+
+store all the primitive variables and print it - create a sep class for this purpose
+explore array 
+store your fullname and explore the string methods that we discussed
+https://runestone.academy/ns/books/published/apcsareview/Strings/Exercises.html
