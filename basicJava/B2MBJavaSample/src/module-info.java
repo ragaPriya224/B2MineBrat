@@ -1,0 +1,2 @@
+module b2MBJavaSample {
+}
