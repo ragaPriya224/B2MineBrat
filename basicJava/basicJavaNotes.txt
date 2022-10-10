@@ -21,3 +21,12 @@ store your fullname and explore the string methods that we discussed
 https://runestone.academy/ns/books/published/apcsareview/Strings/Exercises.html
 ------------day2 10/10/2021 -----------------
 https://twitter.com/java/status/1184685214640926721
+https://www.w3schools.com/java/java_switch.asp
+
+
+TASKS TO DO:
+1. you have 100 rupee, and your favourite icecream is 50 rupee. Write a logic to find whether you’ll be able to buy a icecream or not. If yes, print , “yummy”, 
+if no, print, “let me buy next time”
+2. Switch problems:
+try switch case for printing the values for grade.. suppose if grade is A, print someting like, good or above 90%, something like that.. try to have 4-5 cases and default block as well 
+
