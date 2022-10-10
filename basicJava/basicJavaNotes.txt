@@ -22,7 +22,7 @@ https://runestone.academy/ns/books/published/apcsareview/Strings/Exercises.html
 ------------day2 10/10/2021 -----------------
 https://twitter.com/java/status/1184685214640926721
 https://www.w3schools.com/java/java_switch.asp
-
+https://www.edureka.co/blog/30-pattern-programs-in-java/
 
 TASKS TO DO:
 1. you have 100 rupee, and your favourite icecream is 50 rupee. Write a logic to find whether you’ll be able to buy a icecream or not. If yes, print , “yummy”, 
@@ -33,4 +33,10 @@ try switch case for printing the values for grade.. suppose if grade is A, print
 store your name  in a variable and print it 5 times 
 using do while loop, and print numbers 1 to 5
 use while loop, and print numbers 1 to 5
+print 
+2
+4
+6
+8
+10
 
