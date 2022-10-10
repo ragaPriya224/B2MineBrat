@@ -19,3 +19,5 @@ store all the primitive variables and print it - create a sep class for this pur
 explore array 
 store your fullname and explore the string methods that we discussed
 https://runestone.academy/ns/books/published/apcsareview/Strings/Exercises.html
+------------day2 10/10/2021 -----------------
+https://twitter.com/java/status/1184685214640926721
