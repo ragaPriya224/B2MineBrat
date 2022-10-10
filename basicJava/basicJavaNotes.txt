@@ -29,4 +29,8 @@ TASKS TO DO:
 if no, print, “let me buy next time”
 2. Switch problems:
 try switch case for printing the values for grade.. suppose if grade is A, print someting like, good or above 90%, something like that.. try to have 4-5 cases and default block as well 
+3. using for loop, print numbers from 10 to 1
+store your name  in a variable and print it 5 times 
+using do while loop, and print numbers 1 to 5
+use while loop, and print numbers 1 to 5
 
