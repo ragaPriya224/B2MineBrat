@@ -40,4 +40,15 @@ print
 8
 10
 Write a method named isEven that accepts an int argument. The method should return true if the argument is even, or false otherwise
+--------------
+create a class named TestDemo , have 3 variable , 1 static and 1 non static method other the main methods
+
+create a object of that class in same class and access the non static method
+create another class as PracticeDemo and access the static method fromTestDemo
+In PracticeDemo, try accessing the non static method of testdemo class
+----------------
+create a class named Food with some variables and methods and then  create a object in same class, try to access these methods and variables
+create a class called Pizza and create a object for food class and try to acces the variables and methods in it. 
+------------
+
 
