@@ -53,4 +53,13 @@ create a class called Pizza and create a object for food class and try to acces 
 1. create a class named dog and have any fields like colour, age , cost anything.. and try creating atleast 2- 3 objects with name like germanshepherd, dalmation, anything
 try to create a default constructor and a parameterised constructor and use it in your class
 ---------------------------------------------
+-----------------------------------------------------DAY 3 OOPS COVERING 11/10/2022 -----------------------------------
 
+
+
+class B extends A 
+then 
+
+class A   = parent class, base class, super Class ->. class wose feature are inherited
+|
+ class B	= child class, sub class , derived class, extended class ->  class that inherites other class
