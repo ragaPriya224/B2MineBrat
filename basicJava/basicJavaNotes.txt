@@ -63,3 +63,10 @@ then
 class A   = parent class, base class, super Class ->. class wose feature are inherited
 |
  class B	= child class, sub class , derived class, extended class ->  class that inherites other class
+ 
+ 
+ final keyword:
+ 
+ class -> cannot be extended
+ variable -> cannot be reassigned
+ method -> cannot be overrided 
