@@ -1,0 +1,15 @@
+create a database named database_YOURID
+view the databases available
+use the newly created database
+create a table
+view  all the tables present in a database
+see the structure of the table
+select a record based on a condition
+delete a record based on a condition
+insert a record based on a condition
+update a record based on a condition
+
+create another table and maintain a relationship with the previously created table.
+insert a data in the newly created table
+view the structure of the newly created table 
+delete a record in the table
