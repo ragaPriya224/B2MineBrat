@@ -1,0 +1,25 @@
+ARRAY LIST:
+-----------
+Write a program to initialize an ArrayList in java?
+Write a program to find the length of the ArrayList?
+Write a program to add elements to ArrayList ?(create a list with food items and some foods to it)
+write a program to check if element(pizza) exists in ArrayList
+
+Write a program to add element at particular index of ArrayList?(try adding icecream at 4th index)
+Write a program to remove element from specified index of ArrayList
+
+HashSet
+------
+Write a program to initialize an HashSet in java?
+Write a program to add elements to HashSet? 
+
+Given an element write a program to check if element(value) exists in HashSet?Hint: create a HashSet with animal and check whether monkey is present in that 
+    set or not
+    
+    
+HASHMAP:
+--------
+    Write a program to initialize a HashMap in java ?
+    Write a program to add elements to the HashMap given the key and value data type is String?Hint: create a map with superhero id and superheronames
+    Write a program to get size of HashMap?(USE READYMADE METHODS)
+    How to check if HashMap is empty?
