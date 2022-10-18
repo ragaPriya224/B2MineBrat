@@ -1,11 +1,17 @@
 class Home{
-BSNL bsnl = new BSNL();
+Airtel bsnl = new Airtel();
 bsnl.connect();
 
 }
 
 
 class BSNL{
+public void connect(){
+s.out("connecting");}
+}
+
+
+class Airtel{
 public void connect(){
 s.out("connecting");}
 }
