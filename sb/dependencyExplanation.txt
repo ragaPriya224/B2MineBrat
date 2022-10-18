@@ -1,5 +1,6 @@
 class Home{
-
+BSNL bsnl = new BSNL();
+bsnl.connect();
 
 }
 
