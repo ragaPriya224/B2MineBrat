@@ -1,17 +1,26 @@
 class Home{
-Airtel bsnl = new Airtel();
+Airtel bsnl = new Airtel(); //tight coupling 
 bsnl.connect();
 
 }
 
 
-class BSNL{
+class BSNL implements Internet{
 public void connect(){
 s.out("connecting");}
 }
 
 
-class Airtel{
+class Airtel implements Internet {
 public void connect(){
 s.out("connecting");}
+}
+
+
+class Jio implements Internet{
+public void connect(){
+s.out("connecting");}
+}
+
+interface Internet{
 }
