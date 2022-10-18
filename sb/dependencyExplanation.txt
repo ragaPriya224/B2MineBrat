@@ -1,15 +1,22 @@
+@Component
 class Home{
-Internet obj = new Jio(); //tight coupling 
+
+@Autowired
+BSNL obj;
+// Internet obj = new Jio(); //tight coupling 
+
+
 obj.connect();
 }
 
 
+@Component
 class BSNL implements Internet{
 public void connect(){
 s.out("connecting");}
 }
 
-
+@Component
 class Airtel implements Internet {
 public void connect(){
 s.out("connecting");}
