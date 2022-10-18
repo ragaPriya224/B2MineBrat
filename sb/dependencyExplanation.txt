@@ -1,6 +1,6 @@
 class Home{
-Airtel bsnl = new Airtel(); //tight coupling 
-bsnl.connect();
+Internet obj = new Airtel(); //tight coupling 
+obj.connect();
 
 }
 
