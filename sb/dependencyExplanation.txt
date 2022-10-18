@@ -1,7 +1,6 @@
 class Home{
-Internet obj = new Airtel(); //tight coupling 
+Internet obj = new Jio(); //tight coupling 
 obj.connect();
-
 }
 
 
@@ -23,4 +22,6 @@ s.out("connecting");}
 }
 
 interface Internet{
+
 }
+
