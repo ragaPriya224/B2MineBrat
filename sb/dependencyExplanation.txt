@@ -1,1 +1,10 @@
+class Home{
 
+
+}
+
+
+class BSNL{
+public void connect(){
+s.out("connecting");}
+}
