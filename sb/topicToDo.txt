@@ -1,0 +1,8 @@
+TOPICs:
+
+
+GET     /topics     get all topics
+GET     /topics/id  get the particular topic detail.
+POST    /topics     create topics
+PUT     /topics/id  update topic
+DELETE  /topics/id    delete topic 
