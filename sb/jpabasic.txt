@@ -1,0 +1,19 @@
+JPA -> java persistence api 
+ORM -> object relational mapping 
+
+ORM? helps us to map the entity class with the sequel db/table 
+
+we were app, sb -> not connected to db 
+
+spring data jpa...term?
+1st jpa?
+ it's basically a specification  that let's us to do ORM, when u're connecting with db.
+ most enterprises use sequel db/relational db 
+ tables, keys -> primary, foreign key 
+ u need something like jdbc, run queries, 
+
+f/w will handle the queries. 
+
+jpa is a way to use orm 
+jpa-> handle everything.. handles queries,.. handles the conversion 
+
