@@ -9,4 +9,10 @@ public interface TopicService {
 	List<Topic> getAllTopics();
 
 	Topic getTopic(String id );
+
+	void deleteTopic(String id);
+
+	void updateTopic(String id,Topic topic);
+
+	void addTopic(Topic topic);
 }
