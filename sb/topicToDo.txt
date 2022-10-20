@@ -6,3 +6,14 @@ GET     /topics/id  get the particular topic detail.
 POST    /topics     create topics
 PUT     /topics/id  update topic
 DELETE  /topics/id    delete topic 
+
+------------------courses to do 
+
+
+GET     /topics/{id}/courses     get all courses
+GET     /topics/{id}/courses/{id}         get the particular course detail.
+POST    /topics/{id}/courses            create course
+PUT     /topics/{id}/courses/{id}   update course
+DELETE  /topics/{id}/courses/{id}     delete course 
+
+---------------------
