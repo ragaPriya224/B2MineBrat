@@ -43,3 +43,12 @@ U PUT ANNOTATIONS, EVEN FOR COMPLEX
 
 
 ------------------------------
+
+HIBERNATE VS JPA 
+
+ANALOGY: THINK DIFF B/W INTERFACE  &  IMPLEMENTATION 
+                           ||              ||
+                        provide pic      does all the work 
+                       
+                       jpa              hibernate
+                        interface        implementation
