@@ -17,3 +17,25 @@ f/w will handle the queries.
 jpa is a way to use orm 
 jpa-> handle everything.. handles queries,.. handles the conversion 
 
+------------------
+
+y jpa?
+1. most widely used
+2. most of java enterprise aps connect to db 
+3. most of db ,is relational db
+4. common way to connect java app with relational db is jpa/jdbc(low end alternative )
+Eg: 
+sb apps with db -> jpa
+java ee with db -> jpa 
+
+
+
+OBJECT RELATIONAL MAPPING:
+
+
+
+OBJECTS  -> JAVA SIDE
+TABLES ROW -> DB SIDE 
+
+JPA -> IS MEANT TO DO ORM 
+
