@@ -1,2 +1,3 @@
 1. use @Getmapping,@putmapping instead of requestmapping
 2. keep entity as singular
+3. Resource is plural
