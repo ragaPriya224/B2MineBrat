@@ -52,3 +52,11 @@ ANALOGY: THINK DIFF B/W INTERFACE  &  IMPLEMENTATION
                        
                        jpa              hibernate
                         interface        implementation
+                        
+ hibernate -> open source  orm f/w 
+ 
+ f/w -> knows how to do orm thing
+ 
+ hibernate -> take care of db side of things
+ we not gonna take care of db side , once we done mapppings.
+ that's the goalwith jpa :) 
