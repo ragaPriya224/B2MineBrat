@@ -1,0 +1,2 @@
+1. use @Getmapping,@putmapping instead of requestmapping
+2. keep entity as singular
