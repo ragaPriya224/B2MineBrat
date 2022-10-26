@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed Oct 26 15:37:25 IST 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0184-13c2-d03a-00000224f358 
+on database directory memory:C:\Users\ragap\Downloads\minebrat2-jpa-starter\minebrat2-jpa-starter\8aae964e-e819-4efc-af42-86fc0ec1fe90 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2f333739 
+Loaded from file:/C:/Users/ragap/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Eclipse Adoptium
+java.runtime.version=17.0.2+8
+user.dir=C:\Users\ragap\Downloads\minebrat2-jpa-starter\minebrat2-jpa-starter
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
