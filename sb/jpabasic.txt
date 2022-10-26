@@ -60,3 +60,6 @@ ANALOGY: THINK DIFF B/W INTERFACE  &  IMPLEMENTATION
  hibernate -> take care of db side of things
  we not gonna take care of db side , once we done mapppings.
  that's the goalwith jpa :) 
+ 
+ 
+ hibernate -> leader in orm solutions
