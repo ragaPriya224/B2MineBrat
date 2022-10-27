@@ -1,0 +1,20 @@
+1. new maven project -> finish
+2. dep to add -> h2db, jpa 
+
+to do: 1. tell where db is ..(cnnection string..etc)
+       2. how to connect 
+       
+ * we created a simple java class named JpaStarterMain 
+ * -------- create a model class, persistence context ----------
+ 
+ src-> main-> resources -> meta-inf -> persistence.xml created
+ this file contains persistence context 
+        -> bunch of info's about what db 
+        -> location
+        -? connection stringlike userid, pwd, 
+        -> how jpa needs to behave
+        -> what kind of transaction, does it drop schema, does it show queries..align queries..etc
+   IT'S LIKE CONFIGURING HOW JPA NEEDS TO BEHAVE WHEN IT NEEDS TO CONNECT DB 
+   
+       
+       
