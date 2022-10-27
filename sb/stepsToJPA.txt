@@ -16,5 +16,26 @@ to do: 1. tell where db is ..(cnnection string..etc)
         -> what kind of transaction, does it drop schema, does it show queries..align queries..etc
    IT'S LIKE CONFIGURING HOW JPA NEEDS TO BEHAVE WHEN IT NEEDS TO CONNECT DB 
    
+   ADD CODE IN PERSISTANCE.XML
+   
+   -> now i know how to connect db, where db is. 
+   what to do with db?
+   if emp db na, employees
+   if ecommerce db na, products/order
+   
+   
+   CREATE A JAVA CLASS => EMPLOYEE ,2 PROPS, GETTER,SETTER, @ID
+   
+   ------------persist the entities with entity manager-----------
+   now we have instance of class
+   we need to tell jpa to save it 
+   1st added -> dep added jpa
+   2nd  did -> told where db is
+   3 rd did -> mapping (entity, table , id )
+   4 to do -> save data 
+   how>?by getting entity manager
+                   ----------------   -> object /service 
+                   entity? data holder 
+                    need instance of entit manager, for that need instance of entity factory 
        
        
