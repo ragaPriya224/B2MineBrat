@@ -25,7 +25,7 @@ public class Employee {
 	@Column(unique = true, length = 10, nullable = true, updatable=false)
 	private String ssn;
 	
-	@Temporal(TemporalType.TIMESTAMP)
+	@Temporal(TemporalType.TIME)
 	private Date dob;
 	
 	public Date getDob() {
