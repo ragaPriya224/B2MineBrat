@@ -24,20 +24,19 @@ public class JpaStarterMain {
 		e.setSsn("123");
 		e.setDob(new Date());
 		e.setType(EmployeeType.FULL_TIME); // value will be o.bcoz integer type
+		
 		Employee e2 = new Employee();
-		e2.setId(2);
+		e2.setId(1);
 		e2.setName("afternoon");
 		e2.setSsn("456");
 		
-		Employee e3 = new Employee();
-		e3.setId(3);
-		e3.setName("bye");
+
 		
 		EntityTransaction t = em.getTransaction();
 		t.begin(); //start transaction
 		em.persist(e); //save my employee data 
 		em.persist(e2);
-		em.persist(e3);
+
 		t.commit();/// it will get saved 
 		
 	}
