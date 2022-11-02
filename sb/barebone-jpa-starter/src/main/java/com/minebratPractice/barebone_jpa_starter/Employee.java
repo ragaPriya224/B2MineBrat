@@ -1,9 +1,13 @@
 package com.minebratPractice.barebone_jpa_starter;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "EMPLOYEE_DATA") //name is optional
@@ -14,13 +18,22 @@ public class Employee {
 	
 	@Column(name ="employee_name")
 	private String name;
-	@Column(insertable = false)
+	
 	private int age;
 	
 
-	@Column(unique = true, length = 10, nullable = false, updatable=false)
+	@Column(unique = true, length = 10, nullable = true, updatable=false)
 	private String ssn;
 	
+	@Temporal(TemporalType.DATE)
+	private Date dob;
+	
+	public Date getDob() {
+		return dob;
+	}
+	public void setDob(Date dob) {
+		this.dob = dob;
+	}
 	public int getAge() {
 		return age;
 	}

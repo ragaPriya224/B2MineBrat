@@ -1,5 +1,7 @@
 package com.minebratPractice.barebone_jpa_starter;
 
+import java.util.Date;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -20,6 +22,7 @@ public class JpaStarterMain {
 		e.setId(1);
 		e.setName("hello");
 		e.setSsn("123");
+		e.setDob(new Date());
 		
 		Employee e2 = new Employee();
 		e2.setId(2);
