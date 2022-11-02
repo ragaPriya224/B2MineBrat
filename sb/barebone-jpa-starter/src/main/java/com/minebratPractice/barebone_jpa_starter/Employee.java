@@ -14,7 +14,24 @@ public class Employee {
 	
 	@Column(name ="employee_name")
 	private String name;
+	private int age;
 	
+
+	@Column(unique = true, length = 10)
+	private String ssn;
+	
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getSsn() {
+		return ssn;
+	}
+	public void setSsn(String ssn) {
+		this.ssn = ssn;
+	}
 	public int getId() {
 		return id;
 	}

@@ -24,7 +24,7 @@ public class JpaStarterMain {
 		Employee e2 = new Employee();
 		e2.setId(2);
 		e2.setName("afternoon");
-		e2.setSsn("123");
+		e2.setSsn("456");
 		
 		Employee e3 = new Employee();
 		e3.setId(3);
