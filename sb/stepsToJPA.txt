@@ -50,5 +50,11 @@ to do: 1. tell where db is ..(cnnection string..etc)
     once persistance is closed, create      > will not drop everything 
    
    
+   hbm2ddl.auto create-drop :
+If the value is create-drop then, Hibernate first checks for a table and do the necessary operations and finally drops the table after all the operations were completed.
+hbm2ddl.auto Create :
+If the value is CREATE then the hibernate first drops the existing tables data and structure, then creates new tables and executes the operations on the newly created tables.
+
+   
        
        
