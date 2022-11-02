@@ -28,6 +28,15 @@ public class Employee {
 	@Temporal(TemporalType.TIME)
 	private Date dob;
 	
+	
+	private EmployeeType type; // mapping enum with member variable 
+	
+	public EmployeeType getType() {
+		return type;
+	}
+	public void setType(EmployeeType type) {
+		this.type = type;
+	}
 	public Date getDob() {
 		return dob;
 	}
