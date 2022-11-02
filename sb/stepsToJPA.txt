@@ -37,5 +37,12 @@ to do: 1. tell where db is ..(cnnection string..etc)
                    ----------------   -> object /service 
                    entity? data holder 
                     need instance of entit manager, for that need instance of entity factory 
+                    
+   ------- 02 -11-2022 ------------------------------
+   
+   1. validate 
+      check if entity definitions in java classes match the table definitions in db. it's not gonna do anything
+   
+   
        
        
