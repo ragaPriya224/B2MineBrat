@@ -19,14 +19,14 @@ public class JpaStarterMain {
 		
 		//create instance of employee
 		Employee e = new Employee();
-		e.setId(1);
+//		e.setId(1);
 		e.setName("hello");
 		e.setSsn("123");
 		e.setDob(new Date());
 		e.setType(EmployeeType.FULL_TIME); // value will be o.bcoz integer type
 		
 		Employee e2 = new Employee();
-		e2.setId(1);
+//		e2.setId(2);
 		e2.setName("afternoon");
 		e2.setSsn("456");
 		
