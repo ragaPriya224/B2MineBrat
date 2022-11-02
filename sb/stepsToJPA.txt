@@ -42,6 +42,12 @@ to do: 1. tell where db is ..(cnnection string..etc)
    
    1. validate 
       check if entity definitions in java classes match the table definitions in db. it's not gonna do anything
+   2. update
+   3. create -> drops everything and starts
+   4. create-drop -> drops everything and starts.
+   diff?
+   once persistance is closed, create-drop > will drop everything 
+    once persistance is closed, create      > will not drop everything 
    
    
        
