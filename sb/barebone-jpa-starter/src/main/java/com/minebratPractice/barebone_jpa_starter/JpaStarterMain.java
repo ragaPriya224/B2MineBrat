@@ -19,10 +19,12 @@ public class JpaStarterMain {
 		Employee e = new Employee();
 		e.setId(1);
 		e.setName("hello");
+		e.setSsn("123");
 		
 		Employee e2 = new Employee();
 		e2.setId(2);
 		e2.setName("afternoon");
+		e2.setSsn("123");
 		
 		Employee e3 = new Employee();
 		e3.setId(3);
