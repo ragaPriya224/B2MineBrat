@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "EMPLOYEE_DATA")
+@Table(name = "EMPLOYEE_DATA") //name is optional
 public class Employee {
 
 	@Id
