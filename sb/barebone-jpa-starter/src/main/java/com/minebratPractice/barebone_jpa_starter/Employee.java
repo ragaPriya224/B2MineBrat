@@ -14,10 +14,11 @@ public class Employee {
 	
 	@Column(name ="employee_name")
 	private String name;
+	@Column(insertable = false)
 	private int age;
 	
 
-	@Column(unique = true, length = 10)
+	@Column(unique = true, length = 10, nullable = false, updatable=false)
 	private String ssn;
 	
 	public int getAge() {

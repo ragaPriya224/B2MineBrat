@@ -29,6 +29,7 @@ public class JpaStarterMain {
 		Employee e3 = new Employee();
 		e3.setId(3);
 		e3.setName("bye");
+		
 		EntityTransaction t = em.getTransaction();
 		t.begin(); //start transaction
 		em.persist(e); //save my employee data 
