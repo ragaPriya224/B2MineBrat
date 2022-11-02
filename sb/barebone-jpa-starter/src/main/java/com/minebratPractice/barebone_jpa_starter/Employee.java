@@ -1,5 +1,6 @@
 package com.minebratPractice.barebone_jpa_starter;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -10,6 +11,8 @@ public class Employee {
 
 	@Id
 	private int id; //consdered as pkey
+	
+	@Column(name ="employee_name")
 	private String name;
 	
 	public int getId() {
