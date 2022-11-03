@@ -18,9 +18,7 @@ public class JpaStarterMain {
 		EntityManager em = emf.createEntityManager();
 
 		Employee employee = em.find(Employee.class, 1);
-		employee.setAge(100);
-		employee.setType(EmployeeType.CONTRACT);
-
+		
 
 //		System.out.println(employee);
 //		Employee e2 = em.find(Employee.class, 2);
@@ -47,7 +45,8 @@ public class JpaStarterMain {
 		//		
 				EntityTransaction t = em.getTransaction();
 				t.begin(); //start transaction
-				em.persist(employee); //save my employee data 
+//				em.persist(employee); //save my employee data 
+				em.remove(employee);
 		//		em.persist(e2);
 		//
 				t.commit();/// it will get saved 
