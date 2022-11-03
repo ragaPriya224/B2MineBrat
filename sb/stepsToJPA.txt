@@ -50,5 +50,23 @@ to do: 1. tell where db is ..(cnnection string..etc)
     once persistance is closed, create      > will not drop everything 
    
    
+   hbm2ddl.auto create-drop :
+If the value is create-drop then, Hibernate first checks for a table and do the necessary operations and finally drops the table after all the operations were completed.
+hbm2ddl.auto Create :
+If the value is CREATE then the hibernate first drops the existing tables data and structure, then creates new tables and executes the operations on the newly created tables.
+--------
+
+for accesscard 1 -> assigned to employee 1
+for accesscard 2 -> assigned to employee 2    (1 - 1  relationship )
+   
+       emp id 1 -> card of id 3
+       emp id 2 -> card of id 4 
        
        
+       Don't do EAGER FETCH...JUZ DO LAZY FETCH 
+     
+     output is:   Employee [id=1, name=hello, age=0, ssn=123, dob=15:51:28, type=FULL_TIME, debugString=null, card=AccessCard [id=3, issuedDate=2022-11-03 15:51:28.316, isActive=true, firmwareVersion=1.0.0]]
+     
+     AccessCard [id=3, issuedDate=2022-11-03 15:51:28.316, isActive=true, firmwareVersion=1.0.0]
+
+
