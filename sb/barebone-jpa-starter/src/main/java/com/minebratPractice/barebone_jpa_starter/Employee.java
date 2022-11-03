@@ -6,6 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -46,7 +47,7 @@ public class Employee {
 	public void setDebugString(String debugString) {
 		this.debugString = debugString;
 	}
-	@OneToOne // way to specify
+	@OneToOne(fetch = FetchType.LAZY) // way to specify
 	private AccessCard card;
 	
 	public AccessCard getCard() {
@@ -94,7 +95,8 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", age=" + age + ", ssn=" + ssn + ", dob=" + dob + ", type="
-				+ type + ", debugString=" + debugString + "]";
+				+ type + ", debugString=" + debugString + ", card=" + card + "]";
 	}
+	
 	
 }

@@ -45,4 +45,11 @@ public class AccessCard {
 	}
 	
 	
+	@Override
+	public String toString() {
+		return "AccessCard [id=" + id + ", issuedDate=" + issuedDate + ", isActive=" + isActive + ", firmwareVersion="
+				+ firmwareVersion + "]";
+	}
+	
+	
 }
