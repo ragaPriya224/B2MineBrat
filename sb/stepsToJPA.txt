@@ -59,5 +59,9 @@ If the value is CREATE then the hibernate first drops the existing tables data a
 for accesscard 1 -> assigned to employee 1
 for accesscard 2 -> assigned to employee 2    (1 - 1  relationship )
    
+       emp id 1 -> card of id 3
+       emp id 2 -> card of id 4 
        
+       
+       Don't do EAGER FETCH...JUZ DO LAZY FETCH 
        
