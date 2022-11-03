@@ -25,6 +25,7 @@ public class JpaStarterMain {
 		card1.setFirmwareVersion("1.0.0");
 		card1.setIssuedDate(new Date());
 		card1.setActive(true);
+	
 //		card1.setId(110);
 		AccessCard  card2 = new AccessCard();
 		card2.setFirmwareVersion("2.0.0");
@@ -54,9 +55,11 @@ e.setCard(card1);
 				e2.setName("afternoon");
 				e2.setSsn("456");
 				e2.setCard(card2);// not linking individual value, linking the instance
-		//		
-		//
-		//		
+	
+				
+				
+				card1.setOwner(e); //cyclical relationship s
+				card2.setOwner(e2);
 				EntityTransaction t = em.getTransaction();
 				t.begin(); //start transaction
 				em.persist(e); //save my employee data 

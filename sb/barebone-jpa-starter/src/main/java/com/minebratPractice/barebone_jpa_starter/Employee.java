@@ -47,7 +47,7 @@ public class Employee {
 	public void setDebugString(String debugString) {
 		this.debugString = debugString;
 	}
-	@OneToOne(fetch = FetchType.LAZY) // way to specify
+	@OneToOne // way to specify
 	private AccessCard card;
 	
 	public AccessCard getCard() {

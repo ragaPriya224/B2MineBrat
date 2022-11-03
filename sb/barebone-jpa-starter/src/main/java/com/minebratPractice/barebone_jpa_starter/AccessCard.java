@@ -3,9 +3,11 @@ package com.minebratPractice.barebone_jpa_starter;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 //1 employee - > 1 access card
 
@@ -19,6 +21,15 @@ public class AccessCard {
 	private boolean isActive;
 	private String firmwareVersion;
 	
+	@OneToOne //way to specify
+	private Employee owner;
+	
+	public Employee getOwner() {
+		return owner;
+	}
+	public void setOwner(Employee owner) {
+		this.owner = owner;
+	}
 	public int getId() {
 		return id;
 	}
