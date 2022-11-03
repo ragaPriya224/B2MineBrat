@@ -60,20 +60,32 @@ e.setCard(card1);
 				
 				card1.setOwner(e); //cyclical relationship s
 				card2.setOwner(e2);
-//				EntityTransaction t = em.getTransaction();
-//				t.begin(); //start transaction
-//				em.persist(e); //save my employee data 
-//				em.persist(e2);
-//				em.persist(card1);
-//				em.persist(card2);
-//				
-				System.out.println(card1.getOwner());
+				PayStub p1 = new PayStub();
+				p1.setPayPeriodEnd(new Date());
+				p1.setPayPeriodStart(new Date());
+				p1.setSalary(1000);
+
+				PayStub p2 = new PayStub();
+				p2.setPayPeriodEnd(new Date());
+				p2.setPayPeriodStart(new Date());
+				p2.setSalary(2000);
+				
+				EntityTransaction t = em.getTransaction();
+				t.begin(); //start transaction
+				em.persist(e); //save my employee data 
+				em.persist(e2);
+				em.persist(card1);
+				em.persist(card2);
+				
+				em.persist(p1);
+				em.persist(p2);
+//				System.out.println(card1.getOwner());
 ////				em.remove(employee);
 //		//		
 //		//
-//				t.commit();/// it will get saved 
-//		em.close();
-//		emf.close(); 
+				t.commit();/// it will get saved 
+		em.close();
+		emf.close(); 
 	}
 
 }
