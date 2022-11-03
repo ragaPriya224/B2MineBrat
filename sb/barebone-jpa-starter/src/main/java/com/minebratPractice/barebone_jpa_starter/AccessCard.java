@@ -21,7 +21,7 @@ public class AccessCard {
 	private boolean isActive;
 	private String firmwareVersion;
 	
-	@OneToOne //way to specify
+	@OneToOne(mappedBy = "card") //way to specify
 	private Employee owner;
 	
 	public Employee getOwner() {

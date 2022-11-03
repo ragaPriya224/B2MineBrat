@@ -60,18 +60,20 @@ e.setCard(card1);
 				
 				card1.setOwner(e); //cyclical relationship s
 				card2.setOwner(e2);
-				EntityTransaction t = em.getTransaction();
-				t.begin(); //start transaction
-				em.persist(e); //save my employee data 
-				em.persist(e2);
-				em.persist(card1);
-				em.persist(card2);
-//				em.remove(employee);
-		//		
-		//
-				t.commit();/// it will get saved 
-		em.close();
-		emf.close(); 
+//				EntityTransaction t = em.getTransaction();
+//				t.begin(); //start transaction
+//				em.persist(e); //save my employee data 
+//				em.persist(e2);
+//				em.persist(card1);
+//				em.persist(card2);
+//				
+				System.out.println(card1.getOwner());
+////				em.remove(employee);
+//		//		
+//		//
+//				t.commit();/// it will get saved 
+//		em.close();
+//		emf.close(); 
 	}
 
 }
