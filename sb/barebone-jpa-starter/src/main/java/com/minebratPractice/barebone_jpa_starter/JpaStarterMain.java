@@ -18,14 +18,17 @@ public class JpaStarterMain {
 		EntityManager em = emf.createEntityManager();
 
 		Employee employee = em.find(Employee.class, 1);
+		employee.setAge(100);
+		employee.setType(EmployeeType.CONTRACT);
 
-		System.out.println(employee);
-		Employee e2 = em.find(Employee.class, 2);
 
-		System.out.println("output is" + e2);
-		Employee e3 = em.find(Employee.class, 3);
+//		System.out.println(employee);
+//		Employee e2 = em.find(Employee.class, 2);
+//
+//		System.out.println("output is" + e2);
+//		Employee e3 = em.find(Employee.class, 3);
 
-		System.out.println("output for id3 is " + e3); //in sql, o/p is empty result, in java, it's null
+//		System.out.println("output for id3 is " + e3); //in sql, o/p is empty result, in java, it's null
 		//		
 		//		//create instance of employee
 		//		Employee e = new Employee();
@@ -42,12 +45,12 @@ public class JpaStarterMain {
 		//		
 		//
 		//		
-		//		EntityTransaction t = em.getTransaction();
-		//		t.begin(); //start transaction
-		//		em.persist(e); //save my employee data 
+				EntityTransaction t = em.getTransaction();
+				t.begin(); //start transaction
+				em.persist(employee); //save my employee data 
 		//		em.persist(e2);
 		//
-		//		t.commit();/// it will get saved 
+				t.commit();/// it will get saved 
 		em.close();
 		emf.close(); 
 	}
