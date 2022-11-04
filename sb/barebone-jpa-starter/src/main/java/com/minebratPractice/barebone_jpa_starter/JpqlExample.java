@@ -13,7 +13,7 @@ public class JpqlExample {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("myApp");
 		EntityManager em = emf.createEntityManager();
 
-		TypedQuery<Employee> q = em.createQuery("SELECT e FROM Employee e ",Employee.class );
+		TypedQuery<Employee> q = em.createQuery("SELECT e FROM Employee e where ssn >100 order by e.ssn desc",Employee.class );
 		// u have to deal with java side, u should not db side 
 		//name of class is employee
 		//name of table is employee_data
