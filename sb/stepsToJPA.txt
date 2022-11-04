@@ -70,3 +70,7 @@ for accesscard 2 -> assigned to employee 2    (1 - 1  relationship )
      AccessCard [id=3, issuedDate=2022-11-03 15:51:28.316, isActive=true, firmwareVersion=1.0.0]
 
 single employee can contain multiple payslip 
+
+default:
+1 to 1 relation - default fetch type - eager
+1 to many relation- default fetch type - lazy
