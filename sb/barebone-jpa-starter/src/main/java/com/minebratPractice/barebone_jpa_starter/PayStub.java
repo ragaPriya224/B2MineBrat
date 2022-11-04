@@ -5,6 +5,8 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class PayStub {
@@ -16,6 +18,16 @@ public class PayStub {
 	private Date payPeriodEnd;
 	private float salary;
 	
+	@ManyToOne //many payslip map to single employee
+	private Employee employee;
+	
+	
+	public Employee getEmployee() {
+		return employee;
+	}
+	public void setEmployee(Employee employee) {
+		this.employee = employee;
+	}
 	public int getId() {
 		return id;
 	}
@@ -40,6 +52,13 @@ public class PayStub {
 	public void setSalary(float salary) {
 		this.salary = salary;
 	}
+	@Override
+	public String toString() {
+		return "PayStub [id=" + id + ", payPeriodStart=" + payPeriodStart + ", payPeriodEnd=" + payPeriodEnd
+				+ ", salary=" + salary + ", "
+						+ "employee=" + employee + "]";
+	}
+
 
 	
 }

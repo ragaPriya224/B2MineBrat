@@ -9,14 +9,19 @@ public class JpaStarterRead {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("myApp");
 
 		EntityManager em = emf.createEntityManager();
-//		Employee employee = em.find(Employee.class, 1);
-//		System.out.println("output is:   "+employee );
-//		System.out.println("name is:   "+employee.getName() );
-//
-//		System.out.println("card is:   "+employee.getCard() );
-		
-		AccessCard card = em.find(AccessCard.class, 3);
-		System.out.println(card.getOwner());
+		//		Employee employee = em.find(Employee.class, 1);
+		//		System.out.println("output is:   "+employee );
+		//		System.out.println("name is:   "+employee.getName() );
+		//
+		//		System.out.println("card is:   "+employee.getCard() );
 
+		//		AccessCard card = em.find(AccessCard.class, 3);
+		//		System.out.println(card.getOwner());
+
+		PayStub p = em.find(PayStub.class, 5);
+		System.out.println("paystub details:   "+p);
+
+		Employee employee = em.find(Employee.class, 1);
+		System.out.println("in employee, paystub detail is:   "+employee.getPaystub());
 	}
 }

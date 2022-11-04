@@ -1,12 +1,17 @@
 package com.minebratPractice.barebone_jpa_starter;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Access;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+
+//import io.minebratsDemo.jpa_starter.PayStub;
 
 public class JpaStarterMain {
 
@@ -49,6 +54,7 @@ public class JpaStarterMain {
 				e.setDob(new Date());
 				e.setType(EmployeeType.FULL_TIME); // value will be o.bcoz integer type
 e.setCard(card1);
+
 			
 				Employee e2 = new Employee();
 		//		e2.setId(2);
@@ -64,12 +70,18 @@ e.setCard(card1);
 				p1.setPayPeriodEnd(new Date());
 				p1.setPayPeriodStart(new Date());
 				p1.setSalary(1000);
-
+p1.setEmployee(e);
 				PayStub p2 = new PayStub();
 				p2.setPayPeriodEnd(new Date());
 				p2.setPayPeriodStart(new Date());
 				p2.setSalary(2000);
+				p2.setEmployee(e2);
 				
+				List<PayStub> paystubList = new ArrayList<PayStub>();
+				paystubList.add(p1);
+				paystubList.add(p2);
+//				e.setPaystub(paystubList);
+//				e.setPaystub(Arrays.asList(p1,p2));
 				EntityTransaction t = em.getTransaction();
 				t.begin(); //start transaction
 				em.persist(e); //save my employee data 

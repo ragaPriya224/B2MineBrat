@@ -1,15 +1,16 @@
 package com.minebratPractice.barebone_jpa_starter;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -40,6 +41,12 @@ public class Employee {
 	
 	@Transient
 	private String debugString;
+
+	@OneToOne // way to specify
+	private AccessCard card;
+	
+	@OneToMany(mappedBy = "employee" )
+	private List<PayStub> paystub ;
 	
 	public String getDebugString() {
 		return debugString;
@@ -47,9 +54,12 @@ public class Employee {
 	public void setDebugString(String debugString) {
 		this.debugString = debugString;
 	}
-	@OneToOne // way to specify
-	private AccessCard card;
-	
+	public List<PayStub> getPaystub() {
+		return paystub;
+	}
+	public void setPaystub(List<PayStub> paystub) {
+		this.paystub = paystub;
+	}
 	public AccessCard getCard() {
 		return card;
 	}
@@ -95,8 +105,14 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", age=" + age + ", ssn=" + ssn + ", dob=" + dob + ", type="
-				+ type + ", debugString=" + debugString + ", card=" + card + "]";
+				+ type + ", debugString=" + debugString + ", card=" + card 
+				+ 
+//				","
+//						+ " paystub=" + paystub +
+						"]";
 	}
+	
+	
 	
 	
 }
