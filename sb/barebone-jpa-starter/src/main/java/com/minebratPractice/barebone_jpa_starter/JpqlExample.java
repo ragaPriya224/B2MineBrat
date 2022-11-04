@@ -22,9 +22,10 @@ public class JpqlExample {
 //		List<Employee> resultList = q.getResultList(); //gives list of employees
 //		System.out.println(resultList);
 		
-		TypedQuery<Employee> query = em.createNamedQuery("emp name asc",Employee.class);
+		TypedQuery<Employee> query = em.createNamedQuery("emp",Employee.class);
+		query.setParameter("ssn", "200");
 		List<Employee> resultList = query.getResultList(); //gives list of employees
-
+       System.out.println(resultList);
 		em.close();
 		emf.close();
 	}

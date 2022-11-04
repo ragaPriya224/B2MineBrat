@@ -23,7 +23,8 @@ import javax.persistence.Transient;
 
 @Entity
 @Table(name = "EMPLOYEE_DATA") //name is optional
-@NamedQuery(query = "select * from employee e order by e.name", name = "emp name asc")
+@NamedQuery(query = "select e from Employee e order by e.name", name = "emp name asc")
+@NamedQuery(query = "select e from Employee e  where e.ssn > :ssn", name = "emp")
 public class Employee {
 
 	@Id
