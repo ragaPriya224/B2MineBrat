@@ -1,0 +1,18 @@
+dep:
+Spring Web WEB
+Lombok DEVELOPER TOOLS
+MySQL Driver SQL
+Spring Data JPA
+
+
+create sb project & import it
+
+STEPS:
+
+1. adding dependency and sb project creation and import
+2.configure mysql db
+3.create jpa entity 
+4. create repository
+5. create jpql/native query
+6. create service layer
+7. build search rest api and test using postman
