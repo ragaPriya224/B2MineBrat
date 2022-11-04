@@ -74,3 +74,15 @@ single employee can contain multiple payslip
 default:
 1 to 1 relation - default fetch type - eager
 1 to many relation- default fetch type - lazy
+
+
+many to many relationships:
+
+
+group: minebrat group ,dev team 2
+employee a(dev in mb)  --> whatsapp group of minebrat, team2 
+employee b (tester in mb )   ->whatsapp group of minebrat , not in team2 group 
+
+
+e1 -> both groups
+e2 -? part of only one group 
