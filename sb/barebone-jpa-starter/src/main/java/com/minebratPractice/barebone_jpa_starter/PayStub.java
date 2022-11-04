@@ -2,6 +2,7 @@ package com.minebratPractice.barebone_jpa_starter;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -14,11 +15,13 @@ public class PayStub {
 	@Id
 	@GeneratedValue
 	private int id;
+	@Column(name ="start")
 	private Date payPeriodStart;
 	private Date payPeriodEnd;
 	private float salary;
 	
 	@ManyToOne //many payslip map to single employee
+	@JoinColumn(name="paystub_for")
 	private Employee employee;
 	
 	
