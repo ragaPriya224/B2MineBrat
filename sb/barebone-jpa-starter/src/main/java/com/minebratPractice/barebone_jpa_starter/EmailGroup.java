@@ -17,7 +17,7 @@ public class EmailGroup {
 	private int id;
 	private String name;
 	
-	@ManyToMany
+	@ManyToMany(mappedBy = "emailGroups")
 	private List<Employee> members = new ArrayList<Employee>();
 	
 	public void addMember(Employee e) {

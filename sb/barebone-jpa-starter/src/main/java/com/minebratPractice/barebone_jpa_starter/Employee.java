@@ -11,6 +11,7 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
@@ -51,6 +52,7 @@ public class Employee {
 	private List<PayStub> paystub ;
 	
     @ManyToMany
+    @JoinTable(name ="whatsapp")
 	private List<EmailGroup> emailGroups = new ArrayList<EmailGroup>();
 	
     
