@@ -69,4 +69,29 @@ for accesscard 2 -> assigned to employee 2    (1 - 1  relationship )
      
      AccessCard [id=3, issuedDate=2022-11-03 15:51:28.316, isActive=true, firmwareVersion=1.0.0]
 
+single employee can contain multiple payslip 
 
+default:
+1 to 1 relation - default fetch type - eager
+1 to many relation- default fetch type - lazy
+many to many relation-> default lazy 
+
+
+many to many relationships:
+
+
+group: minebrat group ,dev team 2
+employee a(dev in mb)  --> whatsapp group of minebrat, team2 
+employee b (tester in mb )   ->whatsapp group of minebrat , not in team2 group 
+
+
+e1 -> both groups
+e2 -? part of only one group 
+
+new table created: EmailGroup_EMPLOYEE_DATA
+                   EMPLOYEE_DATA_EmailGroup   -> this is wrong. why ? jpa doesn't know same 
+                   
+                   ----------
+ JPQL 
+ NAMED QUERY
+ NATIVE QUERY 
