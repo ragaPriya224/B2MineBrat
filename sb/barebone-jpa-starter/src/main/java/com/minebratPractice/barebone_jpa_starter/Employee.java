@@ -1,5 +1,6 @@
 package com.minebratPractice.barebone_jpa_starter;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -10,6 +11,7 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -48,6 +50,19 @@ public class Employee {
 	@OneToMany(mappedBy = "employee" )
 	private List<PayStub> paystub ;
 	
+    @ManyToMany
+	private List<EmailGroup> emailGroups = new ArrayList<EmailGroup>();
+	
+    
+    public void addEmailSubscription(EmailGroup g) {
+    	this.emailGroups.add(g);
+    }
+	public List<EmailGroup> getEmailGroups() {
+		return emailGroups;
+	}
+	public void setEmailGroups(List<EmailGroup> emailGroups) {
+		this.emailGroups = emailGroups;
+	}
 	public String getDebugString() {
 		return debugString;
 	}

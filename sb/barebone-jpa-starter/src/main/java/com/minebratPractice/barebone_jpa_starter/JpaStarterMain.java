@@ -80,6 +80,24 @@ p1.setEmployee(e);
 				List<PayStub> paystubList = new ArrayList<PayStub>();
 				paystubList.add(p1);
 				paystubList.add(p2);
+				
+				
+				EmailGroup g1 = new EmailGroup();
+				g1.setName("company dev discussions");
+				
+				EmailGroup g2 = new EmailGroup();
+				g2.setName("engineering");
+				e.addEmailSubscription(g1);
+				e.addEmailSubscription(g2);
+				//e ->belongs to both groups
+				g1.addMember(e);
+				g1.addMember(e2);
+				
+				e2.addEmailSubscription(g2);
+				//e2 belongs to only one group 
+				g2.addMember(e);
+				
+				
 //				e.setPaystub(paystubList);
 //				e.setPaystub(Arrays.asList(p1,p2));
 				EntityTransaction t = em.getTransaction();
@@ -91,6 +109,8 @@ p1.setEmployee(e);
 				
 				em.persist(p1);
 				em.persist(p2);
+				em.persist(g1);
+				em.persist(g2);
 //				System.out.println(card1.getOwner());
 ////				em.remove(employee);
 //		//		
