@@ -90,3 +90,8 @@ e2 -? part of only one group
 
 new table created: EmailGroup_EMPLOYEE_DATA
                    EMPLOYEE_DATA_EmailGroup   -> this is wrong. why ? jpa doesn't know same 
+                   
+                   ----------
+ JPQL 
+ NAMED QUERY
+ NATIVE QUERY 
