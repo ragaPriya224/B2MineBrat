@@ -13,14 +13,18 @@ public class JpqlExample {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("myApp");
 		EntityManager em = emf.createEntityManager();
 
-		TypedQuery<Employee> q = em.createQuery("SELECT e FROM Employee e where ssn >100 order by e.ssn desc",Employee.class );
-		// u have to deal with java side, u should not db side 
-		//name of class is employee
-		//name of table is employee_data
-		// don't mention star,mention alias name 
+//		TypedQuery<Employee> q = em.createQuery("SELECT e FROM Employee e where ssn >100 order by e.ssn desc",Employee.class );
+//		// u have to deal with java side, u should not db side 
+//		//name of class is employee
+//		//name of table is employee_data
+//		// don't mention star,mention alias name 
+//
+//		List<Employee> resultList = q.getResultList(); //gives list of employees
+//		System.out.println(resultList);
+		
+		TypedQuery<Employee> query = em.createNamedQuery("emp name asc",Employee.class);
+		List<Employee> resultList = query.getResultList(); //gives list of employees
 
-		List<Employee> resultList = q.getResultList(); //gives list of employees
-		System.out.println(resultList);
 		em.close();
 		emf.close();
 	}
