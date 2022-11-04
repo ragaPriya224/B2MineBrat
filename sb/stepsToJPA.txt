@@ -74,6 +74,7 @@ single employee can contain multiple payslip
 default:
 1 to 1 relation - default fetch type - eager
 1 to many relation- default fetch type - lazy
+many to many relation-> default lazy 
 
 
 many to many relationships:
@@ -86,3 +87,6 @@ employee b (tester in mb )   ->whatsapp group of minebrat , not in team2 group
 
 e1 -> both groups
 e2 -? part of only one group 
+
+new table created: EmailGroup_EMPLOYEE_DATA
+                   EMPLOYEE_DATA_EmailGroup   -> this is wrong. why ? jpa doesn't know same 
